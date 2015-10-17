@@ -1,10 +1,6 @@
-from itertools import permutations
-import pprint
-from geopy.distance import vincenty
-from random import randint
 from copy import deepcopy
-from datetime import date, timedelta, datetime
-from bson.json_util import dumps, loads
+from datetime import datetime, timedelta
+from bson.json_util import loads
 
 with open("mockdata.json", "r") as myfile:
     dataset = str(myfile.read())

@@ -2,10 +2,8 @@ from itertools import permutations
 import pprint
 from geopy.distance import vincenty
 from random import randint
-from copy import deepcopy
-from datetime import date, timedelta, datetime
+from datetime import timedelta, datetime
 from bson.json_util import dumps
-import json
 
 
 pp = pprint.PrettyPrinter(indent=4)
