@@ -25,10 +25,11 @@ def get_flight(origin, destination, days):
 
 class SequenceFinder:
 
-    def __init__(self, start, min_day, max_total_day):
+    def __init__(self, start, cities, min_day, max_total_day):
         self.min_day = min_day
         self.max_total_day = max_total_day
         self.start = start
+        dataset["cities"] = cities.split(',')
         self.visited = {city: False for city in dataset["cities"]}
         self.visited[start] = True
         self.city_sequence = [(start, 0, 0)]

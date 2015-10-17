@@ -44,7 +44,7 @@ def get_price(distance):
 
 # Generte random flight data with price based on location and random
 for begin, end in permutations(cities, 2):
-    for day in range(20):
+    for day in range(100):
         cur = {"origin": begin, "destination": end}
         cur["distance"] = vincenty(
             cities[begin]["location"], cities[end]["location"]).miles
