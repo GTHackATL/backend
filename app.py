@@ -9,4 +9,4 @@ def index(city, min_day, max_total_day):
     return json.dumps(s.search_route())
     # return template('<b>Hello {{name}}</b>!', name=name)
 
-run(host='localhost', port=8080)
+run(host='localhost', port=5555)
